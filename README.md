@@ -1,26 +1,21 @@
-assault
+wavgen
 -------
 
 Summary
 -------
-A test suite to test socket delivery rates against web servers. 
+This tool generates WAV files of just about any arbitrary length.
+
+The primary purpose of this tool is to generate legimate binary data for testing high throughput applications.
+However, you can take it and modify and do what you wish as it's a good starting point for basic sound synthesis.
+
 
 Requirements
 ------------
-- libcurl
-- pthread
+Nothing that shouldn't be included with your standard C libraries.
+
 
 Usage
 -----
-Options for using `assault` are as follows:
-<pre>
--c, --count <arg>      Run tests this many times.
--u, --url <arg>        Run against this URL.
--m, --memory           Do not use any local file storage ( WARNING: Large responses may cause problems... )
--d, --directory <arg>  Store the results here.
-    --dry-run          Show what we would have done.
+No options, just compile and run `./wavgen <length-of-file-in-seconds>`
 
--m, --method <type>    Use <type> of method when making a request
-                       (Available options are GET, POST, PATCH, PUT, DELETE, HEAD)
-</pre>
 
